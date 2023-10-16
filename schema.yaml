@@ -1,0 +1,27 @@
+COLUMNS:
+  date           : object 
+  week           : object 
+  sunrise_hour   : int64  
+  sunrise_min    : int64  
+  sunrise_sec    : int64  
+  sunset_hour    : int64  
+  sunset_min     : int64  
+  sunset_sec     : int64  
+  season         : object 
+  is_holiday     : int64  
+  is_weekend     : int64  
+  snow           : float64
+  snowdepth      : float64
+  temp           : float64
+  precip         : float64
+  precipprob     : int64  
+  preciptype     : object 
+  windgust       : float64
+  winddir        : float64
+  solarradiation : float64
+  moonphase      : float64
+  conditions     : object 
+  Offense Count  : int64
+
+TARGET_COLUMN:
+  name  : Offense Count

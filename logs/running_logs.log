@@ -1,0 +1,52 @@
+[2023-10-17 00:16:41,832: INFO: data_ingestion: Entered the data ingestion method or component]
+[2023-10-17 00:16:41,846: INFO: data_ingestion: Read the dataset as dataframe]
+[2023-10-17 00:16:41,873: INFO: data_ingestion: Train test split initiated]
+[2023-10-17 00:16:41,908: INFO: data_ingestion: Ingestion of the data is completed]
+[2023-10-17 00:16:41,939: INFO: data_transformation: Read train and test data completed]
+[2023-10-17 00:16:41,943: INFO: data_transformation: Train Dataframe Head : 
+         date       week  sunrise_hour  sunrise_min  sunrise_sec  sunset_hour  sunset_min  sunset_sec  season  is_holiday  is_weekend  snow  snowdepth  temp  precip  precipprob preciptype  windgust  winddir  solarradiation  moonphase conditions  Offense Count
+0  2022-03-08    Tuesday             6           39           17           18          25          32  Spring           0           0   0.0        0.0  45.9   0.074         100       rain      33.2      3.7            21.1       0.19       rain            628
+1  2013-04-19     Friday             6           50           14           19          51          12  Spring           0           0   0.0        0.0  55.7   0.000           0       none      31.7      5.4           323.1       0.30      clear            397
+2  2010-03-22     Monday             7           22           49           19          34          11  Spring           0           0   0.0        0.0  56.2   0.000           0       none      20.8    285.4           290.5       0.24      clear            347
+3  2012-03-14  Wednesday             7           31           46           19          29          37  Spring           0           0   0.0        0.0  73.2   0.002         100       rain      26.4    160.9           205.2       0.75       rain            342
+4  2014-11-05  Wednesday             6           38            6           17          31          38  Autumn           0           0   0.0        0.0  70.1   0.437         100       rain      21.9     57.1             NaN       0.46       rain            339]
+[2023-10-17 00:16:41,950: INFO: data_transformation: Test Dataframe Head  : 
+         date      week  sunrise_hour  sunrise_min  sunrise_sec  sunset_hour  sunset_min  sunset_sec  season  is_holiday  is_weekend  snow  snowdepth  temp  precip  precipprob preciptype  windgust  winddir  solarradiation  moonphase conditions  Offense Count
+0  2018-08-02  Thursday             6           41           34           20          13          31  Summer           0           0   0.0        0.0  84.8   0.000           0       none      11.4     15.5           277.0       0.70      clear            742
+1  2016-01-01    Friday             7           16           51           17          33           4  Winter           1           0   0.0        0.0  47.8   0.001         100       rain      28.9    350.4            63.4       0.75       rain            367
+2  2013-07-19    Friday             6           33           31           20          21          49  Summer           0           0   0.0        0.0  79.9   0.024         100       rain      30.0     92.9           278.1       0.39       rain            373
+3  2017-12-12   Tuesday             7            7           36           17          23           8  Winter           0           0   0.0        0.0  56.2   0.000           0       none      22.6    329.4           174.0       0.81      clear            345
+4  2010-06-18    Friday             6           20           59           20          24          19  Summer           0           0   0.0        0.0  85.3   0.000           0       none      24.2    167.3           346.1       0.25     cloudy            382]
+[2023-10-17 00:16:41,956: INFO: data_transformation: Obtaining preprocessing object]
+[2023-10-17 00:16:41,957: INFO: data_transformation: Data Transformation initiated]
+[2023-10-17 00:16:41,957: INFO: data_transformation: Pipeline Initiated]
+[2023-10-17 00:16:41,999: INFO: data_transformation: Applying preprocessing object on training and testing datasets.]
+[2023-10-17 00:16:41,999: INFO: data_transformation: Precesssor pickle in created and saved]
+[2023-10-17 00:16:41,999: INFO: model_trainer: Split training and test input data]
+[2023-10-17 00:16:44,343: INFO: model_trainer: Best found model on both training and testing dataset]
+[2023-10-17 00:57:13,337: INFO: data_ingestion: Entered the data ingestion method or component]
+[2023-10-17 00:57:13,365: INFO: data_ingestion: Read the dataset as dataframe]
+[2023-10-17 00:57:13,402: INFO: data_ingestion: Train test split initiated]
+[2023-10-17 00:57:13,420: INFO: data_ingestion: Ingestion of the data is completed]
+[2023-10-17 00:57:13,465: INFO: data_transformation: Read train and test data completed]
+[2023-10-17 00:57:13,476: INFO: data_transformation: Train Dataframe Head : 
+         date       week  sunrise_hour  sunrise_min  sunrise_sec  sunset_hour  sunset_min  sunset_sec  season  is_holiday  is_weekend  snow  snowdepth  temp  precip  precipprob preciptype  windgust  winddir  solarradiation  moonphase conditions  Offense Count
+0  2022-03-08    Tuesday             6           39           17           18          25          32  Spring           0           0   0.0        0.0  45.9   0.074         100       rain      33.2      3.7            21.1       0.19       rain            628
+1  2013-04-19     Friday             6           50           14           19          51          12  Spring           0           0   0.0        0.0  55.7   0.000           0       none      31.7      5.4           323.1       0.30      clear            397
+2  2010-03-22     Monday             7           22           49           19          34          11  Spring           0           0   0.0        0.0  56.2   0.000           0       none      20.8    285.4           290.5       0.24      clear            347
+3  2012-03-14  Wednesday             7           31           46           19          29          37  Spring           0           0   0.0        0.0  73.2   0.002         100       rain      26.4    160.9           205.2       0.75       rain            342
+4  2014-11-05  Wednesday             6           38            6           17          31          38  Autumn           0           0   0.0        0.0  70.1   0.437         100       rain      21.9     57.1             NaN       0.46       rain            339]
+[2023-10-17 00:57:13,484: INFO: data_transformation: Test Dataframe Head  : 
+         date      week  sunrise_hour  sunrise_min  sunrise_sec  sunset_hour  sunset_min  sunset_sec  season  is_holiday  is_weekend  snow  snowdepth  temp  precip  precipprob preciptype  windgust  winddir  solarradiation  moonphase conditions  Offense Count
+0  2018-08-02  Thursday             6           41           34           20          13          31  Summer           0           0   0.0        0.0  84.8   0.000           0       none      11.4     15.5           277.0       0.70      clear            742
+1  2016-01-01    Friday             7           16           51           17          33           4  Winter           1           0   0.0        0.0  47.8   0.001         100       rain      28.9    350.4            63.4       0.75       rain            367
+2  2013-07-19    Friday             6           33           31           20          21          49  Summer           0           0   0.0        0.0  79.9   0.024         100       rain      30.0     92.9           278.1       0.39       rain            373
+3  2017-12-12   Tuesday             7            7           36           17          23           8  Winter           0           0   0.0        0.0  56.2   0.000           0       none      22.6    329.4           174.0       0.81      clear            345
+4  2010-06-18    Friday             6           20           59           20          24          19  Summer           0           0   0.0        0.0  85.3   0.000           0       none      24.2    167.3           346.1       0.25     cloudy            382]
+[2023-10-17 00:57:13,484: INFO: data_transformation: Obtaining preprocessing object]
+[2023-10-17 00:57:13,484: INFO: data_transformation: Data Transformation initiated]
+[2023-10-17 00:57:13,484: INFO: data_transformation: Pipeline Initiated]
+[2023-10-17 00:57:13,560: INFO: data_transformation: Applying preprocessing object on training and testing datasets.]
+[2023-10-17 00:57:13,566: INFO: data_transformation: Precesssor pickle in created and saved]
+[2023-10-17 00:57:13,567: INFO: model_trainer: Split training and test input data]
+[2023-10-17 00:57:16,404: INFO: model_trainer: Best found model on both training and testing dataset]
